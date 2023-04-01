@@ -1,4 +1,5 @@
 require_relative '../support/github_homepage'
+require 'capybara-screenshot/cucumber'
 
 Given('I am on the GitHub homepage') do
   @github_homepage = GitHubHomePage.new

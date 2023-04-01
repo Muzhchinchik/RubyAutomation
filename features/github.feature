@@ -7,3 +7,8 @@ Feature: GitHub Search
     Given I am on the GitHub homepage
     When I search for "site_prism"
     Then I should see "natritmeyer/site_prism" in the search results
+
+  Scenario: Failed scenario
+    Given I am on the GitHub homepage
+    When I search for "site_prism"
+    Then I should see "Failed step" in the search results
